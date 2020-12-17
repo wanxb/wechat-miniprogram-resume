@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-work-experience": "../../components/work-experience/index",
+    "project-item": "../../components/project-item/index" 
+  }
+}
