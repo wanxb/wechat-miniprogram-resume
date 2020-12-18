@@ -3,12 +3,12 @@
   <!-- 个人信息 -->
   <view id='head'>
     <text style='font-size:180%;font-weight: bold'>王寻兵</text>
-    <text style='font-size:150%;padding:3% 0;border-top:1px solid #00A982;border-bottom:2px solid #00A982;margin:3% 0'>WEB 全栈开发</text>
+    <text style='font-size:150%;padding:3% 0;border-top:1px solid #00A982;border-bottom:2px solid #00A982;margin:3% 0'>WEB 全栈工程师</text>
     <view>
       <view id='head-info'>
         <text>男 / 1994.10</text>
         <text>山东大学 • 计算机科学与技术 • 本科</text>
-        <text>4 年工作经验</text>
+        <text>5 年工作经验</text>
       </view>
       <view id='head-icon'>
         <text class="iconfont icon-weixin" bindtap='copyBlog'></text>
@@ -76,7 +76,12 @@
   <scroll-view scroll-y="true">
     <view id="project-content" wx:for="{{project}}">
       <project-item projectNum="{{item.projectNum}}" projectName="{{item.projectName}}"  projectType="{{item.projectType}}" projectDesc="{{item.projectDesc}}" skillDesc="{{item.skillDesc}}" responsibilityDesc="{{item.responsibilityDesc}}"></project-item>
-    </view>
+    </view> 
   </scroll-view>
+   <view class='project-title'>
+    <view></view>
+    <text>项目...</text>
+    <view></view>
   </view>
+  </view> 
 </view>
