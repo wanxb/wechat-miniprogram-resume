@@ -9,7 +9,7 @@
     </swiper>
   </view>
   <scroll-view scroll-y="true">
-    <view id="project-content" wx:for="{{project}}">
+    <view id="project-content" wx:for="{{project}}" wx:key="index">
       <project-item projectNum="{{item.projectNum}}" projectName="{{item.projectName}}"  projectType="{{item.projectType}}" projectDesc="{{item.projectDesc}}" skillDesc="{{item.skillDesc}}" responsibilityDesc="{{item.responsibilityDesc}}"></project-item>
     </view>
   </scroll-view>

@@ -2,16 +2,16 @@
 <view id="resume">
   <!-- 个人信息 -->
   <view id='head'>
-    <text style='font-size:180%;font-weight: bold'>王寻兵</text>
-    <text style='font-size:150%;padding:3% 0;border-top:1px solid #00A982;border-bottom:2px solid #00A982;margin:3% 0'>WEB 全栈工程师</text>
+    <text style='font-size:180%;font-weight: bold'>{{name}}</text>
+    <text style='font-size:150%;padding:3% 0;border-top:1px solid #00A982;border-bottom:2px solid #00A982;margin:3% 0'>{{title}}</text>
     <view>
       <view id='head-info'>
-        <text>男 / 1994.10</text>
-        <text>山东大学 • 计算机科学与技术 • 本科</text>
-        <text>5 年工作经验</text>
+        <text>{{sex}}</text>
+        <text>{{education}}</text>
+        <text>{{experience}}</text>
       </view>
       <view id='head-icon'>
-        <text class="iconfont icon-weixin" bindtap='copyBlog'></text>
+        <text class="iconfont icon-weixin" bindtap='copyWechat'></text>
         <text class="iconfont icon-github" bindtap='copyGithub'></text>
         <text class="iconfont icon-youxiang" bindtap="copyMail"></text>
         <text class="iconfont icon-phone" bindtap='actionSheetTap'></text>
@@ -31,9 +31,8 @@
 
       <view>
         <text class='skill'>技能</text>
-        <text class='tag'>掌握</text>
-
-        <view class='detail' wx:for="{{technologies}}">
+        <text class='tag'>掌握</text> 
+        <view class='detail' wx:for="{{technologies}}" wx:key="index">
           <view>{{index+1}}.   {{item}}</view>
         </view>
       </view>
@@ -41,7 +40,7 @@
       <view>
         <text class='tool'>工具</text>
         <text class='tag'>熟练</text>
-        <view class='detail' wx:for="{{tools}}">
+        <view class='detail' wx:for="{{tools}}" wx:key="index">
           <view>{{index+1}}.    {{item}}</view>
         </view>
       </view>
@@ -54,7 +53,7 @@
         <text>工作经历</text>
         <view></view>
       </view>
-      <view wx:for="{{experiences}}">
+      <view wx:for="{{experiences}}" wx:key="index">
         <component-work-experience companyName="{{item.companyName}}" position="{{item.position}}" dateRanges="{{item.dateRanges}}" explain="{{item.explain}}">
         </component-work-experience>
       </view>
@@ -74,7 +73,7 @@
     </view>
   <!-- 个人项目 -->
   <scroll-view scroll-y="true">
-    <view id="project-content" wx:for="{{project}}">
+    <view id="project-content" wx:for="{{project}}" wx:key="index">
       <project-item projectNum="{{item.projectNum}}" projectName="{{item.projectName}}"  projectType="{{item.projectType}}" projectDesc="{{item.projectDesc}}" skillDesc="{{item.skillDesc}}" responsibilityDesc="{{item.responsibilityDesc}}"></project-item>
     </view> 
   </scroll-view>

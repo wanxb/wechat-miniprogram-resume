@@ -1,7 +1,23 @@
 module.exports = {
-  //个人介绍配置项
+  //我的姓名
+  name:"王寻兵",
+  //我的职位
+  title:"WEB 全栈工程师",
+  //我的性别 出生年月
+  sex:"男 / 1994.10",
+  //我的学历
+  education:"山东大学 • 计算机科学与技术 • 本科",
+  //我的工作经验
+  experience:"5 年工作经验",
+  //我的联系方式 
+  wechat: "bing23323",
+  phone: "16653131007",
+  mail: "16653131007@163.com",
+  github: "https://github.com/wanxb",
+
+  //自我介绍
   introduce: "本人从事程序开发工作5 年，主要技术栈为.net MVC、easyUI、微信开发等，有过大型项目开发经验。曾主导过项目开发，有带领团队开发产品经验，热爱产品开发，注重团队协作。学习能力、抗压能力较强，喜欢追寻新事物，研究新技术。",
-  //技能配置项
+  //工作技能-技能
   technologies:[
     ".net MVC .net Core WebService WebApi等后端开发经验",
     "对用友U8 软件 NC 财务凭证接口等ERP 软件二次开发经验丰富",
@@ -9,13 +25,13 @@ module.exports = {
     "掌握JavaScript  jQuery  LayUI  easyUI  HTML  VUE  ECharts等前端开发技术",
     "熟悉 Python Doker等开发和容器技术，熟悉DDD 领域驱动设计和微服务架构等开发方向", 
   ],
-  //技术工具配置项
+  //工作技能-工具
   tools:[ 
     "熟练使用 SQLServer  MySQL  MongoDB  Redis 等数据库",
     "熟练使用 Visusl Studio  VSCode 等主流IDE 及编辑器进行开发工作",
     "熟练使用 Git  SVN  PhotoShop Office 等常用办公软件",
   ],
-  //工作经历配置项
+  //工作经历
   experiences: [
     {
       companyName: "济南行信科技有限公司",
@@ -24,7 +40,7 @@ module.exports = {
       explain: "任职于济南行信科技有限公司，从实习生到初级测试开发，再到担任后端高级开发工程师一职，主要负责公司文档编写，后端开发、维护及代码版本管理等工作，目前能力涉及项目架构，项目管理和团队管理等方向。"
     }
   ],
-  //项目经验配置项
+  //项目经验
   project: [
     {
       projectNum: "项目一",

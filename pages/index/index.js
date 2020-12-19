@@ -1,13 +1,17 @@
 /** index.js **/
 const config = require('../../resume.config.js');
-console.log("dfdf---",config);
+// console.log("dfdf---",config);
 Page({
   data: {
-    weixin: 'bing23323',
-    phone: '16653131007',
-    mail: '16653131007@163.com',
-    github: 'https://github.com/wanxb',
-    demo: "",
+    name:config.name,
+    title:config.title,
+    sex:config.sex,
+    education:config.education,
+    experience:config.experience,
+    wechat: config.wechat,
+    phone: config.phone,
+    mail: config.mail,
+    github: config.github, 
     technologies: config.technologies,
     tools: config.tools,
     experiences: config.experiences,
@@ -15,9 +19,9 @@ Page({
     project: config.project
   },
   //微信按钮
-  copyBlog() {
+  copyWechat() {
     wx.setClipboardData({
-      data: this.data.weixin,
+      data: this.data.wechat,
       success() {
         wx.showToast({
           title: '微信已复制',
@@ -83,7 +87,9 @@ Page({
       }
     })
   },
+
   onLoad(){
+    //允许分享按钮
     wx.showShareMenu({
       withShareTicket: true,
       menus: ['shareAppMessage', 'shareTimeline']
